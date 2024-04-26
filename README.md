@@ -1,4 +1,4 @@
-# skilltasks
+# DailyValueCalculator
 
 A new Flutter project.
 

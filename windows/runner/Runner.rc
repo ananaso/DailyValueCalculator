@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "skilltasks" "\0"
+            VALUE "FileDescription", "DailyValueCalculator" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "skilltasks" "\0"
+            VALUE "InternalName", "DailyValueCalculator" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "skilltasks.exe" "\0"
-            VALUE "ProductName", "skilltasks" "\0"
+            VALUE "OriginalFilename", "DailyValueCalculator.exe" "\0"
+            VALUE "ProductName", "DailyValueCalculator" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

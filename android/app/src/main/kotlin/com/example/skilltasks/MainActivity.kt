@@ -1,4 +1,4 @@
-package com.example.skilltasks
+package com.example.DailyValueCalculator
 
 import io.flutter.embedding.android.FlutterActivity
 

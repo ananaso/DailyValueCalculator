@@ -1,6 +1,6 @@
 {
-    "name": "skilltasks",
-    "short_name": "skilltasks",
+    "name": "DailyValueCalculator",
+    "short_name": "DailyValueCalculator",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
