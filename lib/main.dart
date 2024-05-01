@@ -31,8 +31,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String _enteredText = '';
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,6 +63,12 @@ class _NutritionTableState extends State<NutritionTable> {
       // },
       defaultVerticalAlignment: TableCellVerticalAlignment.middle,
       children: <TableRow>[
+        const TableRow(children: <Widget>[
+          Text('Nutrient'),
+          Text('Percentage'),
+          Text('Serving'),
+          Text('Daily Total'),
+        ]),
         TableRow(children: <Widget>[
           const Text('Added Sugars'),
           TableCell(
