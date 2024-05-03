@@ -21,27 +21,32 @@ class _NutrientListState extends State<NutrientList> {
                 child: Text(
               "Nutrient",
               textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold),
             )),
             Expanded(
                 child: Text(
               "Percentage",
               textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold),
             )),
             Expanded(
                 child: Text(
               "Serving",
               textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold),
             )),
             Expanded(
                 child: Text(
               "Daily Value",
               textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold),
             ))
           ],
         ),
       ),
       Expanded(
           child: ListView.separated(
+        padding: const EdgeInsets.all(8),
         itemCount: nutrients.length,
         itemBuilder: (BuildContext context, int index) {
           return NutrientRow(nutrient: nutrients[index]);
