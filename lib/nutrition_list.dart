@@ -15,6 +15,7 @@ class _NutrientListState extends State<NutrientList> {
     return Column(children: [
       Container(
         decoration: const BoxDecoration(border: Border(bottom: BorderSide())),
+        height: 36,
         child: const Row(
           children: [
             Expanded(
