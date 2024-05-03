@@ -32,7 +32,8 @@ class _NutrientRowState extends State<NutrientRow> {
             _calculatedServing = calculateServing(double.tryParse(text) ?? 0.0);
           });
         },
-        decoration: const InputDecoration(border: OutlineInputBorder()),
+        decoration: const InputDecoration(
+            border: OutlineInputBorder(), suffixText: "%"),
         keyboardType: const TextInputType.numberWithOptions(decimal: true),
         inputFormatters: <TextInputFormatter>[
           FilteringTextInputFormatter.allow(RegExp(r'(^\d*[\.]?\d*)')),
@@ -41,7 +42,9 @@ class _NutrientRowState extends State<NutrientRow> {
       )),
       Expanded(
           child: Text(
-        '${_calculatedServing.toStringAsFixed(1)}${widget.nutrient.unit.name}',
+        _calculatedServing > 0
+            ? '${_calculatedServing.toStringAsFixed(1)}${widget.nutrient.unit.name}'
+            : '',
         textAlign: TextAlign.center,
       )),
       Expanded(
