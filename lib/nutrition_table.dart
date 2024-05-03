@@ -12,7 +12,7 @@ class NutrientList extends StatefulWidget {
 class _NutrientListState extends State<NutrientList> {
   @override
   Widget build(BuildContext context) {
-    return ListView(children: <Widget>[
+    return Column(children: [
       const Row(
         children: [
           Expanded(
@@ -37,7 +37,14 @@ class _NutrientListState extends State<NutrientList> {
           ))
         ],
       ),
-      for (final nutrient in nutrients) NutrientRow(nutrient: nutrient)
+      Expanded(
+          child: ListView.separated(
+        itemCount: nutrients.length,
+        itemBuilder: (BuildContext context, int index) {
+          return NutrientRow(nutrient: nutrients[index]);
+        },
+        separatorBuilder: (BuildContext context, int index) => const Divider(),
+      ))
     ]);
   }
 }
