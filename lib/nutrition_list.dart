@@ -13,29 +13,32 @@ class _NutrientListState extends State<NutrientList> {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      const Row(
-        children: [
-          Expanded(
-              child: Text(
-            "Nutrient",
-            textAlign: TextAlign.center,
-          )),
-          Expanded(
-              child: Text(
-            "Percentage",
-            textAlign: TextAlign.center,
-          )),
-          Expanded(
-              child: Text(
-            "Serving",
-            textAlign: TextAlign.center,
-          )),
-          Expanded(
-              child: Text(
-            "Daily Value",
-            textAlign: TextAlign.center,
-          ))
-        ],
+      Container(
+        decoration: const BoxDecoration(border: Border(bottom: BorderSide())),
+        child: const Row(
+          children: [
+            Expanded(
+                child: Text(
+              "Nutrient",
+              textAlign: TextAlign.center,
+            )),
+            Expanded(
+                child: Text(
+              "Percentage",
+              textAlign: TextAlign.center,
+            )),
+            Expanded(
+                child: Text(
+              "Serving",
+              textAlign: TextAlign.center,
+            )),
+            Expanded(
+                child: Text(
+              "Daily Value",
+              textAlign: TextAlign.center,
+            ))
+          ],
+        ),
       ),
       Expanded(
           child: ListView.separated(

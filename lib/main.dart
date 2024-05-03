@@ -1,4 +1,4 @@
-import 'package:daily_value_calculator/nutrition_table.dart';
+import 'package:daily_value_calculator/nutrition_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
