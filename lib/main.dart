@@ -38,6 +38,6 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(widget.title),
         ),
-        body: const NutritionTable());
+        body: const NutrientList());
   }
 }
