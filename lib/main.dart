@@ -85,6 +85,24 @@ class _HomePageState extends State<HomePage> {
                                       })
                               ]),
                               textAlign: TextAlign.center,
+                            ),
+                            const SizedBox(height: 12),
+                            Text.rich(
+                              TextSpan(children: [
+                                const TextSpan(
+                                    text: "All Daily Values sourced from ",
+                                    style: TextStyle(color: Colors.black)),
+                                TextSpan(
+                                    text: 'the FDA',
+                                    style: const TextStyle(color: Colors.blue),
+                                    recognizer: TapGestureRecognizer()
+                                      ..onTap = () async {
+                                        final Uri url = Uri.parse(
+                                            'https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels');
+                                        _launchUrl(url);
+                                      })
+                              ]),
+                              textAlign: TextAlign.center,
                             )
                           ],
                         ),
