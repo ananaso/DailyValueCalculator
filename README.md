@@ -10,4 +10,6 @@ I began using this [DailyValueCalculator](https://dailyvaluecalculator.netlify.a
 
 So I figured: what better way to dip my toes into Flutter than by creating a simple app based on this website using data from the FDA?
 
+## Notes
+
 FDA data source: https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels
